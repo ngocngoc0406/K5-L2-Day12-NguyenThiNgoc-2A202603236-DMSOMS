@@ -1,0 +1,9 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+D01,real_IR,"đốm phản xạ LED trên tròng kính và chai nước che vùng mắt/miệng khi đang uống",eye_left / eye_right / face13,"hai mắt ghi unknown; điểm mắt và miệng gắn cờ occluded/outside, không đoán"
+D03,real_IR,"ảnh rất tối (thiếu sáng NIR), phải tăng brightness hiển thị trên CVAT mới thấy mặt",eye_left / eye_right / glasses,"mắt và kính ghi unknown; dây an toàn vẫn thấy dải chéo nên worn_correct"
+D04,real_IR,"thấy gọng kính và đốm sáng trên tròng nhưng NIR không phân biệt chắc kính cận hay kính râm (kính râm có thể trông trong suốt)",glasses / eye_left / eye_right,"glasses ghi theo hình dạng gọng; mắt unknown vì đốm phản xạ"
+D05,real_IR,"chuỗi đốm phản xạ LED trên kính che cả hai mắt",eye_left / eye_right,"ghi unknown, không ghi closed"
+S01_ir,IR_sim,"mất màu áo (xanh/cam trên RGB thành xám); vật nhận bằng hình dạng",object.type,"thú bông trong ghế trẻ em ghi other theo hình dạng, không dùng màu"
+S03_ir,IR_sim,"ba lô đỏ trên RGB thành xám, lẫn với ghế",object.type,"vẫn ghi bag theo hình dạng quai/túi"
+S05_ir,IR_sim,"RGB ban đêm gần như đen, IR-sim vẫn thấy rõ người và ghế trẻ em (IR-sim không tái hiện suy giảm ánh sáng như IR thật)",person / face / child_seat,"gán theo từng ảnh; không suy nhãn ảnh RGB từ ảnh IR"
+S10_ir,IR_sim,"RGB tối không thấy rõ ghế rear_left, IR-sim thấy rõ trẻ em ngồi trong ghế",child_seat (rear_left),"không gán trẻ em, báo coach theo GUIDE mục 3"
